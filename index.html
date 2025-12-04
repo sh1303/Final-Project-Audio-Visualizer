@@ -1,1 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Final Project Check-In — Music Visualizer (OpenGL + C++)</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 40px;
+            background: #fafafa;
+            line-height: 1.6;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        img {
+            margin-top: 20px;
+            border: 2px solid #ccc;
+            max-width: 600px;
+            display: block;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        ul {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Final Project Check-In — Music Visualizer (OpenGL + C++)</h1>
+
+<div class="section">
+    <h2>Project Description</h2>
+
+    <p>
+        For our final project, <strong>Nirshal Chandra Sekar</strong> and <strong>Samra Huseynova</strong> 
+        are going to implement a real-time 3D music visualizer using only OpenGL and C++. 
+        The goal is to create a dynamic visual scene that responds to audio in real time through 
+        movements of different shapes, color changes, lighting variations, and if time allows, 
+        we plan the inclusion of particle effects too.
+    </p>
+
+    <p>
+        The system will read an audio file, extract raw samples, compute the frequency spectrum 
+        using an FFT implementation, and map different frequency bands to visual elements. 
+        The main visual components will include a set of 2D/3D bars (or other shapes) whose 
+        heights and colors correspond to frequency magnitudes, along with a reactive particle 
+        system where emission rate, velocity, and color shift are tied to beat intensity. 
+        Adjusting camera pose and adding basic lighting will enhance the overall look, making 
+        the visualization feel alive and energetic.
+    </p>
+
+    <p>
+        This project includes substantial graphics programming (real-time geometry updates, shaders, 
+        transformations, lighting, buffer management) and is going to produce a final output that 
+        will be different from our previous assignments.
+    </p>
+</div>
+
+<div class="section">
+    <h2>Progress Plan / Update</h2>
+
+    <h3>Milestones before December 8</h3>
+    <ul>
+        <li>Implement WAV file loading and extract amplitude samples.</li>
+        <li>Implement FFT routine.</li>
+        <li>Map FFT output to a set of frequency bins.</li>
+        <li>Build the initial bar visualizer (dynamic heights, simple colors).</li>
+        <li>Set up OpenGL window, camera, shaders, VBO/VAO, and basic rendering loop.</li>
+    </ul>
+
+    <h3>Final Week Goals</h3>
+    <ul>
+        <li>Implement the particle system (spawning on beats, velocity, lifetime, fade).</li>
+        <li>Add 3D mode with lighting and materials.</li>
+        <li>Add camera orbit/animation and smoother visual transitions.</li>
+        <li>Polish the entire system: color themes, smoothing audio data, performance tuning.</li>
+    </ul>
+
+    <h3>Biggest Concerns / Unknowns</h3>
+    <ul>
+        <li>Implementing FFT efficiently.</li>
+        <li>Ensuring smooth real-time performance when many particles are active.</li>
+        <li>Synchronizing audio sample processing with visual frame updates.</li>
+    </ul>
+
+    <h3>Progress So Far</h3>
+    <p>
+        We started by having a look at some existing cool works for audio visualization. Based on the 
+        insights obtained, we have sketched the steps to complete our project. As the initial step, 
+        we started with the analysis of audio files. As the next step, we plan to move on to the 
+        implementation of FFT.
+    </p>
+</div>
+
+<div class="section">
+    <h2>Expected Result</h2>
+
+    <p>
+        The final visualizer will display a set of animated bars arranged either in a line or circular 
+        pattern. These bars will scale up and down based on the magnitude of the corresponding audio 
+        frequencies. Particles will burst outward during strong beats, gradually fading as they move. 
+        The scene will use dynamic lighting, color shifts, and a moving camera to create an immersive 
+        experience.
+    </p>
+
+    <p>
+        Below is the hand-drawn sketch representing an approximate idea of what we plan to implement:
+    </p>
+
+    <img src="Hand Sketch.jpg" alt="Hand Sketch">
+    
+    <p>
+        Overall, the final project will look like an energized, music-responsive environment with 
+        pulsing bars, glowing particle effects, and smooth motion throughout.
+        <br><br>
+        <em>*The addition of particle effects is tentative and depends on workload.</em>
+    </p>
+</div>
+
+</body>
+</html>
 
